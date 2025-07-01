@@ -3,7 +3,6 @@ package auth
 import (
 	"net/http"
 	"testing"
-    "os"
 )
 
 func TestGetAPIKey(t *testing.T) {
@@ -20,5 +19,4 @@ func TestGetAPIKey(t *testing.T) {
         t.Errorf("Expected %s, got %s", expected, got)
     }
 
-    os.Exit(1)
 }
